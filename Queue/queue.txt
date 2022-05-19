@@ -1,0 +1,33 @@
+Queue is linear data structure follows a particular order in wich the operation are performed : FIFIO
+*Operation Queue: 
+enqueue:Add Item to the queue .
+Dequeue:remove Item from the queue.
+Front:get the front item from the queue.
+Rear:get the the last item from the queue .
+
+Array implementation of a queue : 
+
+*Steps of Enqueue :
+-check if the queue is full or not 
+-if full print overflow and exit,
+-else insert elment and increment tail .
+*Steps of deque :
+-check if queue is empty 
+-if the queue is empty ,print queue is empty 
+-print elment at the head and  increment the head .
+
+Limitation of the queue : 
+we can not use the addresse dequeue in the normal queue
+
+*Circular Queue : 
+Front :to track the first element
+Rear: to track the last element
+-enqueue : 
+-check if the queue is full or not , if(Front==0 && rear=size-1 || rear+1=front)
+-for the first elment set the front to 0 
+-add the new to elment pointed by the Rear
+-increase the rear
+-dequeue : 
+-check if the queue is empty,if (Front==-1)
+-remove the new element from the queue
+-increse the front pointer.
